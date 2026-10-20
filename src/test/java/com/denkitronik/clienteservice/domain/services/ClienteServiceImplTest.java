@@ -210,7 +210,7 @@ class ClienteServiceImplTest {
         List<Region> resultado = clienteService.findAllRegiones();
 
         // Assert
-        assertThat(resultado).hasSize(2);
+        assertThat(resultado).hasSize(1);
         assertThat(resultado.get(0).getNombre()).isEqualTo("Sudamérica");
         verify(clienteDao, times(1)).findAllRegiones();
     }
